@@ -1,5 +1,5 @@
 # コーデ記録アプリ 〜井上以外誰も得しない、略して「daretoku」〜
-<img src ="https://user-images.githubusercontent.com/113824527/201218035-9431025c-07cb-469f-831b-ea2461d46318.png" width="600px">
+<img src ="https://user-images.githubusercontent.com/113824527/201226971-c443ebf2-055e-4af2-a551-2a8701a8906b.png" width="600px">
 
 ## ①課題内容（どんな作品か）
 - もしかして同じ服ばかり着ているのかもという自覚があります。服装を記録することで、次の日のコーディネートの参考になるかと思って作りました。
