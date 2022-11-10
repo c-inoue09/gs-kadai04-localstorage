@@ -180,20 +180,23 @@ $(document).on('click','td', function() {
 			$('.modal-container').removeClass('active');
 		}});
 
-for(let i=0; i<localStorage.length; i++){
-            const key   = localStorage.key(i);
-            console.log(`keyは${key}です`);
-            const value = localStorage.getItem(key);    
-                const yymmddMin = key.replace('outfitForoutfit-','');
-                const storage = JSON.parse(value)
-                console.log(`yymmddMinは${yymmddMin}です`);
-                console.log(storage);
-                const topsForTheDayLoad = storage.topsForTheDay;
-                console.log(topsForTheDayLoad);
-                console.log(`#item-${yymmddMin}-top`); //item-221106-top
-                $(`#item-${yymmddMin}-top`).html("aaa"); // 画像をカレンダー内のdiv(id: item-YYMMDD-top)に格納
-                $(`#item-${yymmddMin}-bottom`).html('storage.bottomsForTheDay'); // // 画像をカレンダー内の#item-YYMMDD-bottomに格納
-        }
+$(document).ready(function(){
+    for(let i=0; i<localStorage.length; i++){
+        const key   = localStorage.key(i);
+        console.log(`keyは${key}です`);
+        const value = localStorage.getItem(key);    
+            const yymmddMin = key.replace('outfitForoutfit-','');
+            const storage = JSON.parse(value)
+            console.log(`yymmddMinは${yymmddMin}です`);
+            console.log(storage);
+            const topsForTheDayLoad = storage.topsForTheDay;
+            console.log(topsForTheDayLoad);
+            console.log(`#item-${yymmddMin}-top`); //item-221106-top
+            $(`#item-${yymmddMin}-top`).html(storage.topsForTheDay); // 画像をカレンダー内のdiv(id: item-YYMMDD-top)に格納
+            $(`#item-${yymmddMin}-bottom`).html(storage.bottomsForTheDay); // // 画像をカレンダー内の#item-YYMMDD-bottomに格納
+    }
+});
+
 // $(#).localStorage.getItem()
 //     localStorage.setItem("20221106-bottom",`<img src ="/img/${clothes}.png" class = "resultbottom">`);
 //     $("#result").html(`${localStorage.getItem('20221106-bottom')}`);
