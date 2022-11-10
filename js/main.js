@@ -196,7 +196,3 @@ $(document).ready(function(){
             $(`#item-${yymmddMin}-bottom`).html(storage.bottomsForTheDay); // // 画像をカレンダー内の#item-YYMMDD-bottomに格納
     }
 });
-
-// $(#).localStorage.getItem()
-//     localStorage.setItem("20221106-bottom",`<img src ="/img/${clothes}.png" class = "resultbottom">`);
-//     $("#result").html(`${localStorage.getItem('20221106-bottom')}`);
